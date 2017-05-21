@@ -180,7 +180,7 @@ public class AirMapView extends MapView implements GoogleMap.InfoWindowAdapter,
         this.map = map;
         this.map.setInfoWindowAdapter(this);
         //set tilt
-        this.map.animateCamera(CameraUpdateFactory.newCameraPosition(CameraPosition.Builder.tilt(30)));
+        this.map.animateCamera(CameraUpdateFactory.newCameraPosition(CameraPosition.Builder.tilt(30).build()));
         //////////////
         this.map.setOnMarkerDragListener(this);
 
